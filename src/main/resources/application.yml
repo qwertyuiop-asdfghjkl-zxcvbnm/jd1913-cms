@@ -3,7 +3,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://39.106.205.55:3306/spring?useunicode=true;&characterEncoding=utf8
+    url: jdbc:mysql://39.106.205.55:3306/cms?useunicode=true;&characterEncoding=utf8
     username: root
     password: root
 server:

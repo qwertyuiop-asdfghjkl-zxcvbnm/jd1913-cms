@@ -1,4 +1,7 @@
 package com.briup.dao;
 
-public interface ICustomerDao {
+import com.briup.bean.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ICustomerDao extends JpaRepository<Customer,Integer> {
 }

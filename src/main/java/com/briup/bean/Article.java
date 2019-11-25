@@ -1,10 +1,15 @@
 package com.briup.bean;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+@Entity
+@Table(name = "cms_article")
 public class Article implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String author;
     private int clickTimes;

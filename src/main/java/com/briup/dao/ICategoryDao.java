@@ -1,4 +1,7 @@
 package com.briup.dao;
 
-public interface ICategoryDao {
+import com.briup.bean.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ICategoryDao extends JpaRepository<Category,Integer> {
 }

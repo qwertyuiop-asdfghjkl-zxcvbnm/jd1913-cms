@@ -1,17 +1,26 @@
 package com.briup.bean;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table
+@Table(name = "cms_link")
+@ApiModel
 public class Link implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(value = "连接id")
     private int id;
+
+    @ApiModelProperty(value = "连接名字",required = true)
     private String name;
+
+    @ApiModelProperty(value = "连接地址",required = true)
     private String url;
 
     public int getId() {

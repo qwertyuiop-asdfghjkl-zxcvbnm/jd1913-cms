@@ -1,4 +1,7 @@
 package com.briup.dao;
 
-public interface IArticleDao {
+import com.briup.bean.Article;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IArticleDao extends JpaRepository<Article,Integer> {
 }
